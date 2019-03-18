@@ -10,10 +10,15 @@ import { APP_ROUTES } from './app.routes';
 /* MODULOS */
 import { PagesModule } from './pages/pages.module';
 
+/* servicios */
+import { SettingsService } from './services/service.index';
+import { ServiceModule } from './services/service.module';
 
-import { AppComponent } from './app.component';
+
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+import { AppComponent } from './app.component';
+
 
 
 
@@ -34,7 +39,8 @@ import { RegisterComponent } from './login/register.component';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
